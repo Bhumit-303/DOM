@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-1</title>
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="intro">Hi my name is Bhumit</h1>
+</body>
+<script>
+    // console.log(document)
+    console.log(document.title);
+    console.log(document.URL);
+    console.log("Hi java script in html");
+    // console.log(document.getElementById("intro").innerText);
+    let text = document.getElementById("intro");   //in this line we are catching the element in a variable name text
+    for(let i = 1; i <= 8; i++){
+        console.log(text.innerText)
+    }
+    text.innerText = "Hello, I am Bhumit Jain";
+</script>
+</html>

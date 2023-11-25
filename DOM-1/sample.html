@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+</head>
+<body>
+    <input type="text" id="imp1">
+    <input type="date" id = "imp2">
+    <select id = "imp3">
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option>
+    </select>
+    <button onclick="Clicked()">Submit</button>
+</body>
+</html>
+<script>
+    let input1 = document.getElementById("imp1")
+    let input2 = document.getElementById("imp2")
+    let input3 = document.getElementById("imp3")
+    function Clicked()
+    {
+        let Allvalue = input1.value + " " + input2.value + " " + input3.value
+        alert(Allvalue)
+    }
+</script>
